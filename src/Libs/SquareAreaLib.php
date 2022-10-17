@@ -4,7 +4,7 @@ namespace Devavi\Architecture\Libs;
 
 class SquareAreaLib
 {
-    public function getSquareArea(int $diagonal): int
+    public function getSquareArea(float $diagonal): float
     {
         return ($diagonal ** 2) / 2;
     }

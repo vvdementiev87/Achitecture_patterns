@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Devavi\Architecture\Services;
-
 
 use Devavi\Architecture\Figures\ICircle;
 use Devavi\Architecture\Figures\ISquare;
@@ -20,13 +18,13 @@ class AreaCalculationService implements ICircle, ISquare
         $this->squareAreaLib = $squareAreaLib;
     }
 
-    public function circleArea(int $circumference): int
+    public function circleArea(float $circumference): float
     {
         $diagonal = $circumference / M_PI;
         return $this->circleAreaLib->getCircleArea($diagonal);
     }
 
-    public function squareArea(int $sideSquare): int
+    public function squareArea(float $sideSquare): float
     {
         $diagonal = sqrt(2) * $sideSquare;
         return $this->squareAreaLib->getSquareArea($diagonal);

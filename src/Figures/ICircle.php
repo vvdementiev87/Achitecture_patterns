@@ -4,5 +4,5 @@ namespace Devavi\Architecture\Figures;
 
 interface ICircle
 {
-    public function circleArea(int $circumference): int;
+    public function circleArea(float $circumference): float;
 }

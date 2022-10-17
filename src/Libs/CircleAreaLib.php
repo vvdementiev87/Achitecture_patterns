@@ -4,7 +4,7 @@ namespace Devavi\Architecture\Libs;
 
 class CircleAreaLib
 {
-    public function getCircleArea(int $diagonal): int
+    public function getCircleArea(float $diagonal): float
     {
         return (M_PI * $diagonal ** 2) / 4;
     }
